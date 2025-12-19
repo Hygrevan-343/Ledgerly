@@ -44,13 +44,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Secrets and credentials
-User_given_codes/credential_firebase.json
+# Secrets - DO NOT COMMIT
 lib/services/twilio_service.dart
-*.json
-!pubspec.lock
-!.vscode/*.json
-
-# Secrets and credentials
 User_given_codes/credential_firebase.json
-lib/services/twilio_service.dart
+lib/services/secrets.dart
