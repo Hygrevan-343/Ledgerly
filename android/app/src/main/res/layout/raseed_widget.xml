@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Action Buttons Section (Left Half) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingEnd="8dp">
+
+        <!-- Camera Button -->
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/widget_button_background"
+            android:drawableTop="@drawable/ic_camera_widget"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:contentDescription="Camera"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" />
+
+        <!-- Gallery Button -->
+        <Button
+            android:id="@+id/gallery_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/widget_button_background"
+            android:drawableTop="@drawable/ic_gallery_widget"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:contentDescription="Gallery"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" />
+
+        <!-- Assist Button -->
+        <Button
+            android:id="@+id/assist_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/widget_button_background"
+            android:drawableTop="@drawable/ic_assist_widget"
+            android:drawablePadding="2dp"
+            android:text=""
+            android:contentDescription="Assist"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <!-- Recent Bill Section (Right Half) -->
+    <LinearLayout
+        android:id="@+id/recent_bill_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/recent_bill_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Bill"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:alpha="0.7"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/recent_bill_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹0.00"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/recent_bill_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:alpha="0.6"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout> 
