@@ -19,6 +19,9 @@ Whether it’s day-to-day spending or shared family expenses, Raseed keeps every
 
 ## 🧱 Tech Stack
 
+<img width="879" height="521" alt="image" src="https://github.com/user-attachments/assets/6b84226b-cf37-4e60-bb5f-9e5cdf5c257d" />
+
+
 - **Flutter** – Cross-platform mobile development  
 - **Firebase** – Authentication & Firestore database  
 - **Provider** – State management  
