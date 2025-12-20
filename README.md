@@ -167,8 +167,9 @@ Receipt(
 )
 ```
 
-## Project Structure
+## 🗂️ Project Structure
 
+```text
 lib/
 ├── main.dart
 ├── models/
@@ -203,5 +204,4 @@ lib/
 android/
 ├── MainActivity.kt
 ├── FloatingWidgetService.kt
-├── RaseedWidgetProvider.kt
-
+└── RaseedWidgetProvider.kt
