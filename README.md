@@ -1,4 +1,4 @@
-# Ledgerly — Smart Receipt & Expense Management
+# LEDGERLY — Smart Receipt & Expense Management
 
 <img width="2816" height="1536" alt="Gemini_Generated_Image_55nbn955nbn955nb" src="https://github.com/user-attachments/assets/e358cce4-bf17-4d90-9f8f-7354046017fb" />
 
@@ -8,7 +8,7 @@ A Flutter-based smart expense management app that turns physical receipts into s
 
 ## ✨ Overview
 
-Raseed helps individuals and families manage receipts, track expenses, and split bills without manual effort. Using vision-based receipt scanning, automated calls, email workflows, and analytics, the app converts scattered financial records into clear, actionable insights.
+Ledgerly helps individuals and families manage receipts, track expenses, and split bills without manual effort. Using vision-based receipt scanning, automated calls, email workflows, and analytics, the app converts scattered financial records into clear, actionable insights.
 
 Whether it’s day-to-day spending or shared family expenses, Raseed keeps everything organized, transparent, and easy to act on.
 
