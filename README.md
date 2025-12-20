@@ -1,145 +1,161 @@
-Here’s your complete README in markdown format with the architecture image embedded at the top:
-
-```markdown
-# Raseed - Smart Receipt Management
+# Ledgerly — Smart Receipt & Expense Management
 
 ![System Architecture](attachments/jfs5BjhuUSdQNWUnp3hp9.png)
 
-A comprehensive Flutter-based expense tracking application with AI-powered insights, family expense sharing, and automated receipt processing through vision recognition.
+A Flutter-based smart expense management app that turns physical receipts into structured financial data, enables seamless family expense sharing, and delivers AI-powered spending insights — all in one place.
 
 ---
 
-## About the Project
+## ✨ Overview
 
-Ledgerly is a modern financial management solution that helps users track expenses, manage receipts, and split bills within family groups or teams. The app leverages AI and vision recognition to automatically extract data from receipts, provides intelligent spending insights, and facilitates seamless expense sharing through automated voice calls and email notifications.
+Raseed helps individuals and families manage receipts, track expenses, and split bills without manual effort. Using vision-based receipt scanning, automated calls, email workflows, and analytics, the app converts scattered financial records into clear, actionable insights.
+
+Whether it’s day-to-day spending or shared family expenses, Raseed keeps everything organized, transparent, and easy to act on.
 
 ---
 
-## Built With
+## 🧱 Tech Stack
 
-- **Flutter** – Cross-platform UI framework  
-- **Firebase** – Backend services (Firestore, Authentication)  
+- **Flutter** – Cross-platform mobile development  
+- **Firebase** – Authentication & Firestore database  
 - **Provider** – State management  
-- **Home Widget** – Native Android/iOS widget support  
-- **FL Chart** – Data visualization  
-- **Image Picker** – Camera and gallery access  
+- **Home Widget** – Native Android/iOS widgets  
+- **FL Chart** – Interactive analytics & charts  
+- **Image Picker** – Camera & gallery access  
 - **Geolocator** – Location-based receipt tagging  
 
 ---
 
-## Data Flow
+## 🔄 System Data Flow
 
-### Receipt Processing Flow
-```
-Camera/Gallery → Vision API (10.95.243.157:5001) → Receipt Data Extraction  
-                                                   ↓  
-                                    Firebase Firestore Storage  
-                                                   ↓  
-                                    UI Update (Provider)
-```
+### Receipt Processing
 
-### Expense Pass Flow
-```
-User Creates Pass → Family Provider → Email Service → Group Members  
-                                  ↓  
-                            Call Service (REST API at 10.95.243.157:3004)  
-                                  ↓  
-                            Voice Call to Members  
-                                  ↓  
-                        Member Accepts/Rejects via Email/App
-```
+Camera / Gallery
+↓
+Vision API (10.95.243.157:5001)
+↓
+Receipt Data Extraction
+↓
+Firebase Firestore
+↓
+UI Update (Provider)
 
-### Widget Interaction Flow
-```
-Home Widget (Android) → MainActivity → Flutter Channel → Widget Service  
-                                                         ↓  
-                                              Camera/Gallery/Assist Screen
-```
+### Expense Pass Workflow
+
+User Creates Pass
+↓
+Family Provider
+↓
+Email Service
+↓
+Group Members
+↓
+Call Service (10.95.243.157:3004)
+↓
+Automated Voice Calls
+↓
+Accept / Reject via Email or App
+
+### Home Widget Interaction
+
+Android Home Widget
+↓
+MainActivity
+↓
+Flutter Method Channel
+↓
+Widget Service
+↓
+Camera / Gallery / Assist Screen
+
 
 ---
 
-## Key Features
+## 🚀 Key Features
 
 ### 📸 Smart Receipt Scanning
-- Camera Integration: Capture receipts directly from the app  
-- Vision Recognition: Automatic data extraction (merchant, amount, date, items)  
-- Location Tagging: GPS coordinates attached to receipts  
-- Firebase Storage: Cloud-based receipt management  
+- Capture receipts via camera or gallery  
+- AI-based vision extraction (merchant, amount, date, items)  
+- Automatic GPS location tagging  
+- Secure cloud storage using Firebase  
 
 ### 👨‍👩‍👧‍👦 Family Hub & Expense Sharing
-- Group Management: Create and manage family/team groups  
-- Expense Pass System: Split bills automatically among members  
-- Voice Call Integration: REST API-based automated calls to notify members  
-- Email Notifications: SMTP-based expense pass notifications with Accept/Reject links  
-- Real-time Status: Track who has accepted or rejected expense passes  
+- Create and manage family or team groups  
+- Split expenses automatically using Expense Passes  
+- Automated voice calls via REST API  
+- Email notifications with Accept / Reject actions  
+- Real-time tracking of member responses  
 
-### 📊 Analytics Dashboard
-- Spending Trends: Visualize expenses over time with interactive charts  
-- Category Breakdown: Detailed analysis by spending categories  
-- AI Insights: ML-powered spending recommendations and anomaly detection  
-- Budget Tracking: Monitor daily, weekly, and monthly spending velocity  
-- Period Comparison: Compare spending across different time periods  
+### 📊 Analytics & Insights
+- Spending trends over time  
+- Category-wise expense breakdown  
+- Budget velocity tracking (daily / weekly / monthly)  
+- Period-to-period comparison  
+- ML-driven insights and anomaly detection  
 
 ### 🤖 AI Assistant
-- Natural Language Queries: Ask about spending in plain language  
-- Personalized Responses: Context-aware answers based on user data  
-- Spending Suggestions: Smart recommendations for budget optimization  
-- Mock Responses: Pre-configured responses for Kavinesh's spending patterns  
+- Natural language spending queries  
+- Context-aware responses based on user data  
+- Smart budget optimization suggestions  
+- Demo-ready mock responses for sample users  
 
-### 📱 Home Widget (Android)
-- Quick Actions: Camera, Gallery, and Assist shortcuts  
-- Recent Bills: Display latest transactions  
-- Total Active Bills: Overview of pending payments  
-- Native Integration: Seamless Flutter-Android communication  
+### 📱 Android Home Widget
+- One-tap access to Camera, Gallery, and Assist  
+- View recent bills instantly  
+- Track active / pending expenses  
+- Smooth Flutter ↔ Android integration  
 
-### 🎨 Modern UI/UX
-- Dark Theme: Eye-friendly dark mode design  
-- Material 3: Latest Material Design components  
-- Responsive Layout: Adapts to different screen sizes  
-- Smooth Animations: Polished transitions and interactions  
+### 🎨 UI & Experience
+- Clean dark mode interface  
+- Material 3 design system  
+- Responsive layouts  
+- Smooth animations and transitions  
 
 ---
 
-## Quick Start
+## ⚡ Getting Started
 
 ### Prerequisites
-- Flutter SDK (>=3.4.4 <4.0.0)  
+- Flutter SDK `>=3.4.4 <4.0.0`  
 - Dart SDK  
-- Android Studio / Xcode (for mobile development)  
-- Firebase account  
-- Vision API server running at `10.95.243.157:5001`  
-- Call API server running at `10.95.243.157:3004`  
+- Android Studio / Xcode  
+- Firebase project  
+- Vision API running at `10.95.243.157:5001`  
+- Call API running at `10.95.243.157:3004`  
 
-### Installation
+---
+
+### Installation Steps
+
 1. Clone the repository  
 2. Install dependencies  
 3. Configure Firebase  
-   - Update `firebase_service.dart` with your Firebase credentials  
-   - Place your `google-services.json` in `app`  
-   - Place your `GoogleService-Info.plist` in `Runner`  
+   - Update `firebase_service.dart`  
+   - Add `google-services.json` to `android/app`  
+   - Add `GoogleService-Info.plist` to `ios/Runner`  
 
-4. Set up Vision & Call APIs  
-   - Ensure backend servers are running:  
-     - Vision API: `http://10.95.243.157:5001`  
-     - Call API: `http://10.95.243.157:3004`  
-   - Update endpoints in `vision_receipt_service.dart` if needed  
+4. Set up backend services  
+   - Vision API → `http://10.95.243.157:5001`  
+   - Call API → `http://10.95.243.157:3004`  
+   - Update endpoints in `vision_receipt_service.dart` if required  
 
-5. Configure Email Service  
+5. Configure email service  
    - Update SMTP credentials in `smtp_email_service.dart`  
-   - Or use webhook service in `webhook_email_service.dart`  
+   - Or switch to `webhook_email_service.dart`  
 
 6. Run the app  
+```bash
+flutter run
+```
 
----
+## 🧪 Usage Guide
 
-## Usage
-
-### Scanning Receipts
-- Tap the floating action button (+) on the Receipts screen  
-- Select Camera or Gallery  
-- Capture or pick an image  
-- Vision API extracts receipt data  
-- Receipt appears in your list with all details  
+### Scanning a Receipt
+- Tap the **+** button on the Receipts screen  
+- Choose **Camera** or **Gallery**  
+- Capture or select an image  
+- Receipt data is extracted automatically  
+- Receipt appears with complete details  
 
 ```dart
 Receipt(
@@ -151,96 +167,41 @@ Receipt(
 )
 ```
 
-### Creating Expense Passes
-- Navigate to Family Hub  
-- Select Group  
-- Pick Receipt  
-- Initiate Call  
-- Track Responses  
-
-### Using the AI Assistant
-- Tap on Assist tab  
-- Ask questions like:  
-  - "Show my monthly spending summary"  
-  - "How much did I spend on education?"  
-  - "What was my peak spending day?"  
-
-### Adding Home Widget (Android)
-- Long Press on home screen  
-- Add "Raseed Widget"  
-- Quick Actions:  
-  - Camera icon → Opens camera  
-  - Gallery icon → Opens gallery  
-  - Assist icon → Opens AI assistant  
-
-### Managing Family Groups
-- Create Group → '+' button → Enter group name  
-- Add Members → 'Add Member' → Enter email  
-
-### Viewing Analytics
-- Dashboard: Overview of total spending and trends  
-- Expense Analytics: Detailed charts and insights  
-  - Category breakdown pie chart  
-  - Spending trend line chart  
-  - Velocity metrics cards  
-  - ML-powered recommendations  
-- Filter Options: Time period, categories, date ranges  
-
----
-
-## Understanding Spending Data
-
-**Kavinesh's Sample Data (Demo):**
-- Monthly Total: ₹28,750  
-- Daily Average: ₹959  
-- Biggest Category: Education (₹25,000)  
-- Peak Day: Saturday (₹1,860)  
-
----
-
 ## Project Structure
 
-```
 lib/
-├── main.dart                    # App entry point
-├── models/                      # Data models
+├── main.dart
+├── models/
 │   ├── receipt.dart
 │   ├── family_group.dart
 │   ├── expense_pass.dart
 │   └── chart_data.dart
-├── screens/                     # UI screens
+├── screens/
 │   ├── dashboard_screen.dart
 │   ├── receipts_screen.dart
 │   ├── family_hub_screen.dart
 │   ├── assist_screen.dart
 │   └── expense_analytics_screen.dart
-├── providers/                   # State management
+├── providers/
 │   ├── app_provider.dart
 │   ├── auth_provider.dart
 │   └── family_provider.dart
-├── services/                    # Business logic
+├── services/
 │   ├── firebase_service.dart
 │   ├── vision_receipt_service.dart
 │   ├── call_service.dart
 │   ├── email_service.dart
 │   └── widget_service.dart
-├── widgets/                     # Reusable components
+├── widgets/
 │   ├── spending_chart.dart
 │   ├── progress_bar.dart
 │   └── expense_pass_popup.dart
-└── utils/                       # Utilities
+└── utils/
     ├── constants.dart
     └── helpers.dart
 
 android/
-├── app/src/main/kotlin/com/example/ui/
-│   ├── MainActivity.kt
-│   ├── FloatingWidgetService.kt
-│   └── RaseedWidgetProvider.kt
-└── app/src/main/res/
-    ├── layout/raseed_widget.xml
-    └── xml/raseed_widget_info.xml
-```
-```
+├── MainActivity.kt
+├── FloatingWidgetService.kt
+├── RaseedWidgetProvider.kt
 
-Let me know if you'd like this exported to a file or styled for a specific platform like GitHub or GitLab.
