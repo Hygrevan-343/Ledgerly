@@ -218,6 +218,20 @@ android/
 ├── FloatingWidgetService.kt
 └── RaseedWidgetProvider.kt
 ```
+---
+## Demo Pics
+
+<img width="1245" height="2359" alt="1-portrait" src="https://github.com/user-attachments/assets/7c848f10-e9af-42e6-a8db-e7035e09c2bb" />
+<img width="1245" height="2359" alt="2-portrait" src="https://github.com/user-attachments/assets/27ee86c0-19c2-4081-8678-4ad04f3ca464" />
+<img width="1245" height="2359" alt="3-portrait" src="https://github.com/user-attachments/assets/63b945e8-1604-46e5-a331-e51688b6b2c3" />
+<img width="1245" height="2359" alt="5-portrait" src="https://github.com/user-attachments/assets/2315ac27-f14c-4213-abf8-96152d8a888d" />
+<img width="1245" height="2359" alt="6-portrait" src="https://github.com/user-attachments/assets/21ea45c5-cad9-45cb-a76e-5cd654d2a4a7" />
+<img width="1245" height="2359" alt="7-portrait" src="https://github.com/user-attachments/assets/15fe9cf3-80cb-45c4-bbd6-4baf67851b46" />
+<img width="1245" height="2359" alt="8-portrait" src="https://github.com/user-attachments/assets/365c0fb4-6981-406b-b5cc-ec43b0f364ac" />
+<img width="1245" height="2359" alt="9-portrait" src="https://github.com/user-attachments/assets/0b0efed4-b401-4eb3-95cf-76954f2a97e1" />
+<img width="1245" height="2359" alt="9-portrait" src="https://github.com/user-attachments/assets/eb905ddc-a051-415b-9d11-f9ba50e71325" />
+
+---
 
 ## ✅ Conclusion
 
