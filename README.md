@@ -19,8 +19,7 @@ Whether it’s day-to-day spending or shared family expenses, Raseed keeps every
 
 ## 🧱 Tech Stack
 
-<img width="879" height="521" alt="image" src="https://github.com/user-attachments/assets/6b84226b-cf37-4e60-bb5f-9e5cdf5c257d" />
-
+<img width="1920" height="1080" alt="ML Cbe_Hackathon (1)" src="https://github.com/user-attachments/assets/a430e7eb-94c9-4456-a557-960cba066a5d" />
 
 - **Flutter** – Cross-platform mobile development  
 - **Firebase** – Authentication & Firestore database  
@@ -33,6 +32,8 @@ Whether it’s day-to-day spending or shared family expenses, Raseed keeps every
 ---
 
 ## 🔄 System Data Flow
+
+<img width="1920" height="1080" alt="ML Cbe_Hackathon" src="https://github.com/user-attachments/assets/8dfce7ae-1a30-4f23-8331-f158926b47e4" />
 
 ### Receipt Processing
 
