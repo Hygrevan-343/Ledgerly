@@ -12,6 +12,9 @@ Ledgerly helps individuals and families manage receipts, track expenses, and spl
 
 Whether it’s day-to-day spending or shared family expenses, Raseed keeps everything organized, transparent, and easy to act on.
 
+![WhatsApp Image 2025-12-20 at 2 06 45 PM](https://github.com/user-attachments/assets/c56d5e28-26ab-4aad-a81f-234d4b666ca3)
+
+
 ---
 
 ## 🧱 Tech Stack
