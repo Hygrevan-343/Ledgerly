@@ -1,6 +1,6 @@
 # Ledgerly — Smart Receipt & Expense Management
 
-![System Architecture](attachments/jfs5BjhuUSdQNWUnp3hp9.png)
+<img width="2816" height="1536" alt="Gemini_Generated_Image_55nbn955nbn955nb" src="https://github.com/user-attachments/assets/e358cce4-bf17-4d90-9f8f-7354046017fb" />
 
 A Flutter-based smart expense management app that turns physical receipts into structured financial data, enables seamless family expense sharing, and delivers AI-powered spending insights — all in one place.
 
