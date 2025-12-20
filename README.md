@@ -37,6 +37,7 @@ Whether it’s day-to-day spending or shared family expenses, Raseed keeps every
 
 ### Receipt Processing
 
+```
 Camera / Gallery
 ↓
 Vision API (10.95.243.157:5001)
@@ -46,9 +47,11 @@ Receipt Data Extraction
 Firebase Firestore
 ↓
 UI Update (Provider)
+```
 
 ### Expense Pass Workflow
 
+```
 User Creates Pass
 ↓
 Family Provider
@@ -62,9 +65,11 @@ Call Service (10.95.243.157:3004)
 Automated Voice Calls
 ↓
 Accept / Reject via Email or App
+```
 
 ### Home Widget Interaction
 
+```
 Android Home Widget
 ↓
 MainActivity
@@ -74,7 +79,7 @@ Flutter Method Channel
 Widget Service
 ↓
 Camera / Gallery / Assist Screen
-
+```
 
 ---
 
