@@ -14,7 +14,7 @@ class FirebaseService {
       if (Firebase.apps.isEmpty) {
         await Firebase.initializeApp(
           options: const FirebaseOptions(
-            apiKey: "AIzaSyCmoK0lVzDXBH4YG0R2DSHYSDvAjREkX4g",
+            apiKey: "",
             authDomain: "agentic-ai-day-c4dda.firebaseapp.com",
             projectId: "agentic-ai-day-c4dda",
             storageBucket: "agentic-ai-day-c4dda.appspot.com",
